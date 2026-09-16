@@ -1,4 +1,4 @@
-IRIS PARFUM V4
+IRIS PARFUM — PHOTO FIX
 
 Исправлены изображения: все 42 фотографии сохранены как JPG и подключаются через <img>, чтобы стабильно работать на iPhone/Android и при запуске через npx serve.
 
