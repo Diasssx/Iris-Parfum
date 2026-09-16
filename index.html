@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IRIS PARFUM — Каталог ароматов</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="#top"><img src="assets/logo.jpg" alt="IRIS PARFUM"><span>IRIS <small>PARFUM</small></span></a>
+  <nav><a href="#catalog">Каталог</a><a href="#about">О магазине</a></nav>
+  <a class="ig" href="https://www.instagram.com/iris_parfum__?stkn=MTVucTJzbXNmczA4YQ==" target="_blank" rel="noopener"><span class="ig-icon">◎</span><span>Instagram</span></a>
+</header>
+<main id="top">
+<section class="hero">
+  <div class="hero-content"><p class="eyebrow">IRIS PARFUM · FRAGRANCE CATALOGUE</p><h1>Аромат — это<br><i>твоя история.</i></h1>
+  <p>Открой коллекцию IRIS PARFUM и найди композицию, которая подходит именно твоему настроению.</p>
+  <a class="gold-btn" href="#catalog">Открыть каталог <b>↓</b></a></div>
+  <div class="hero-art"><div class="orb"></div><div class="logo-hero"><img src="assets/logo.jpg" alt="IRIS PARFUM"></div></div>
+</section>
+<section class="catalog" id="catalog">
+ <div class="title-row"><div><p class="eyebrow">COLLECTION</p><h2>Каталог ароматов</h2></div><div class="result-count"><b id="count">42</b> ароматов</div></div>
+ <div class="controls"><label class="search"><span>⌕</span><input id="search" placeholder="Поиск по названию или нотам"></label>
+ <div class="gender" id="gender"><button class="active" data-g="all">Все</button><button data-g="women">Женские</button><button data-g="men">Мужские</button><button data-g="unisex">Унисекс</button></div></div>
+ <div class="chips" id="chips"><button class="active" data-t="all">Все</button><button data-t="fresh">Свежие</button><button data-t="sweet">Сладкие</button><button data-t="warm">Тёплые</button><button data-t="floral">Цветочные</button><button data-t="woody">Древесные</button><button data-t="spicy">Пряные</button><button data-t="citrus">Цитрусовые</button><button data-t="musky">Мускусные</button><button data-t="amber">Амбровые</button></div>
+ <div class="grid" id="grid"></div><div class="empty" id="empty" hidden><h3>Ничего не найдено</h3><p>Измени запрос или фильтр.</p></div>
+</section>
+<section class="about" id="about"><div><p class="eyebrow">ABOUT IRIS</p><h2>Выбирай<br><i>по ощущению.</i></h2></div><p>IRIS PARFUM — каталог для тех, кто выбирает аромат по ощущению, характеру и настроению. Изучи композицию и узнай наличие напрямую в Instagram.</p></section>
+</main>
+<footer><span>IRIS PARFUM</span><span>© <span id="year"></span></span><a href="https://www.instagram.com/iris_parfum__?stkn=MTVucTJzbXNmczA4YQ==" target="_blank">Instagram ↗</a></footer>
+<div class="modal" id="modal"><div class="backdrop" data-close></div><div class="modal-card"><button class="close" data-close>×</button><div class="modal-photo"><img id="mPhoto" alt="Фото аромата"></div><div class="modal-body"><div class="m-gender" id="mGender"></div><h2 id="mName"></h2><p id="mDesc"></p><div class="specs"><div><span>Характер</span><b id="mChar"></b></div>
+<div class="modal-section">
+  <span class="section-label">Характер аромата</span>
+  <div id="mCharacteristics"></div>
+</div><div><span>Стойкость</span><b id="mLongevity"></b></div></div><div class="notes"><span>Ноты</span><div id="mNotes"></div></div><div class="tags" id="mTags"></div><div class="dm-box"><span>Сообщение для Instagram</span><p id="dmText"></p><button class="copy" id="copyText">Скопировать текст</button></div><a class="order" id="orderBtn" href="#" target="_blank" rel="noopener">Узнать цену и наличие ↗</a><a id="modalInstagram" class="modal-instagram" href="https://www.instagram.com/iris_parfum__?stkn=MTVucTJzbXNmczA4YQ==" target="_blank" rel="noopener">Instagram ↗</a></div></div></div>
+<script src="script.js"></script>
+</body></html>
